@@ -1,0 +1,15 @@
+ {
+  "type": "postgres",
+  "url": "postgres://uemytugwhnicax:0b6fcf2355d25b89e5c40c1ec37abf00dc9899773bd6363a987ac006d81923f3@ec2-3-210-173-88.compute-1.amazonaws.com:5432/d7r8j0neoqs835",
+  "synchronize": true,
+  "logging": false,
+  "entities": [
+    "src/entities/**/*.ts"
+  ],
+  "migrations": [
+    "src/migration/**/*.ts"
+  ],
+  "subscribers": [
+    "src/subscriber/**/*.ts"
+  ]
+}

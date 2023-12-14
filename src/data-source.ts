@@ -6,11 +6,11 @@ import {Appointment} from "./entities/Appointment";
 export const AppDataSource = new DataSource({
 
     type: "postgres",
-    synchronize: true, // Use only in development
+    synchronize: true,
     logging: true,
     entities: [Vendor, Buyer, Appointment],
 
-    url: process.env.DATABASE_URL, // Use the environment variable
+    url: process.env.DATABASE_URL,
 
     ssl: {
         rejectUnauthorized: false

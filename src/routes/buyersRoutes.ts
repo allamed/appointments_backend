@@ -19,7 +19,7 @@ router.get('/', async (req, res) => {
     res.json(buyers);
 });
 
-// Get a single buyer by ID
+
 router.get('/:id', async (req, res) => {
     const buyer = await AppDataSource.getRepository(Buyer).findOneBy({ id: parseInt(req.params.id) });
     if (buyer) {
